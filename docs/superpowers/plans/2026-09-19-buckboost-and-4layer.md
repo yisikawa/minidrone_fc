@@ -341,7 +341,7 @@ JLCPCB の製造限界は 0.1mm なので 0.22mm は十分製造可能。
 - **`mcp__kicad__run_drc` は未接続アイテムを検査しない。** エラー0でも配線が
   繋がっていない場合がある。`kicad-cli pcb drc` を正とすること
 - **`mcp__kicad__refill_zones` は4層フルプレーンで30秒タイムアウトする。**
-  KiCad 同梱の `pcbnew` Python（`D:\KiCad.0in\python.exe`）で
+  KiCad 同梱の `pcbnew` Python（`D:\KiCad\10.0\bin\python.exe`）で
   `ZONE_FILLER(b).Fill(b.Zones())` を直接実行して回避した
 - `refill_zones` / `sync_schematic_to_board` の後は MCP の mtime 記録が古くなり
   以降の書き込みが「Auto-save refused」で無視される。**必ず `reload_board` すること**
