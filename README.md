@@ -262,10 +262,18 @@ JLCPCB の製造限界は 0.1mm なので 0.22mm は十分製造可能です。
   出力し直す必要があります
 - **実機でのブラウンアウト解消は未検証です**
 
-### 9.7 バックアップ
+### 9.7 改訂前の状態に戻すには
 
-改訂前の状態は `D:\KicadProjects\_backup_minidrone_fc_rev2_20260919-151034\`
-に完全なコピーがあります。工程ごとのチェックポイントも
-`minidrone_fc.kicad_pcb.before-*` として残しています。
+改訂前 (rev2) の状態は最初のコミットにそのまま記録してあります。
+タグ `rev2` / `rev2.1` から参照できます。
+
+```
+git show rev2 --stat      改訂前の内容
+git diff rev2 rev2.1      今回の改訂差分
+```
+
+git 導入前に使っていた手動チェックポイント (`*.before-gy521`, `*.before-4layer` など)
+とローカルのフルバックアップは、履歴で代替できるため追跡対象外にしています
+(`.gitignore` 参照)。
 
 詳細な作業記録は `docs/superpowers/plans/2026-09-19-buckboost-and-4layer.md`。
