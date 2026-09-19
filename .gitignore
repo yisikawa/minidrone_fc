@@ -36,3 +36,6 @@ minidrone_fc.csv
 *_drc_violations.json
 drc_*.json
 erc_*.json
+fab_4layer/
+OLD_2LAYER_DO_NOT_USE.txt
+render_*.png
