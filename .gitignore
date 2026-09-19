@@ -1,0 +1,38 @@
+# ---- KiCad の定石 ----
+# GUI のローカル状態（ユーザーごとに異なる）
+*.kicad_prl
+# KiCad の自動バックアップ
+*-backups/
+fp-info-cache
+~*.lck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_sym-bak
+\#auto_saved_files#
+
+# ---- 手動チェックポイント（git 履歴で代替する）----
+# .before-gy521 / .before-baro / .before-4layer などの手動コピー。
+# git を入れた以上これらは不要。既存分はディスクに残してあるが追跡はしない。
+*.before-*
+.mcp-backups/
+.history/
+
+# ---- 生成物（ソースから再生成できるもの）----
+gerbers/
+production/
+*.gbr
+*.gbrjob
+*.drl
+*.pos
+*-all.pos
+*-all-pos.csv
+*.ses
+*.dsn
+*.zip
+*.svg
+*.rpt
+report.txt
+minidrone_fc.csv
+*_drc_violations.json
+drc_*.json
+erc_*.json
