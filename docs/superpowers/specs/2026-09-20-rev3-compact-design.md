@@ -278,7 +278,7 @@ rev2.1 で実証済みの回路をそのまま使う。
 | D1–D4 | SS24 | `Diode:SS24` | `Diode_SMD:D_SMA` | C115726 |
 | D5 | B5819W | `Device:D_Schottky` | `Diode_SMD:D_SOD-123` | C2943878 |
 | L1 | 2.2µH | `Device:L` | `Inductor_SMD:L_APV_ANR3015` | C1329483 |
-| J1 | JST PH 2.0 2P | `Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal` | 同左 | C173752 |
+| J1 | JST PH 2.0 2P | `Connector:Conn_01x02_Pin` | `Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal` | C173752 |
 | J2 | TYPE-C-31-M-12（USB-C 16P） | `Connector:USB_C_Receptacle_USB2.0_16P` | `Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12` | C165948 |
 | LED1 | 緑 0603 | `Device:LED` | `LED_SMD:LED_0603_1608Metric` | C2297 |
 | R, C | — | `Device:R` / `Device:C` | 0603 / 0805 | 既存流用可 |
